@@ -1,0 +1,12 @@
+double paso = 0.001, dy, y = 25, x = 5,xB = 10; //ADAPTAR
+
+while (x < xB)
+{
+    //diferencial
+    dy = 4 * Math.Pow(x, 0) + 6.5 * Math.Pow(x, 1);   //ADAPTAR
+                                                      //avanzar la y
+    y = (dy * paso) + y; //y += dy * paso; 
+                         //avanzar la x
+    x += paso; //x = x + paso;
+}
+Console.WriteLine("El valor de Y cuando X es igual a " + xB + " es: " + y);
