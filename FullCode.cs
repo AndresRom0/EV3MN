@@ -1,4 +1,4 @@
-//DATOS ENTRADA
+//Interpolacion Por Newton
 double[] x1 = { 3, 4 };
 double[] y = { 23.5, 30 };
 
@@ -64,7 +64,7 @@ for (int r = 0; r < ren; r++)
         Console.WriteLine(matriz[r, col - 1] + "x^" + r);
     }
 }
-
+//Metodo Trapecio
 Console.WriteLine("La ecuacion de la Velocidad es 4x+3.25x^2+c");
 
 double limInferior = 5, limSuperior = 10; //VALORES DE ENTRADA
@@ -86,6 +86,7 @@ Console.WriteLine("La velocidad de la partícula en el intervalo de 5 a 10 minut
 
 Console.WriteLine("La ecuacion de la Velocidad es 2x^2+3.25x^3+2.5x");
 
+//Metodo Euler
 double paso = 0.001, dy, y1 = 0, x = 0, xB = 25;
 
 while (x < xB)
